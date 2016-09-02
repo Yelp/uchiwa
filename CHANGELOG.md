@@ -1,3 +1,58 @@
+### 0.18.0 (TBD)
+#### Bug Fixes
+Prevent race condition when using the Uchiwa filters - [Issue #543](https://github.com/sensu/uchiwa/issues/543)
+Fix styling of the uchiwa-dark theme - [PR #105](https://github.com/sensu/uchiwa-web/pull/105)
+
+#### Features
+Support built-in silencing in Sensu 0.26 - [Issue #539](https://github.com/sensu/uchiwa/issues/539)
+Filter per-client subscriptions - [Issue #534](https://github.com/sensu/uchiwa/issues/534)
+Add support for encrypted passwords - [PR #448](https://github.com/sensu/uchiwa/issues/448)
+Display last_ok attribute in events view - [PR #96](https://github.com/sensu/uchiwa-web/pull/96)
+
+### 0.17.1 (2016-08-02)
+#### Bug Fixes
+Remove various debugging traces - [Commit #d249aa4](https://github.com/sensu/uchiwa/commit/d249aa4)
+
+#### Other
+Upgrade to Go 1.6.3 with vendoring support - [PR #528](https://github.com/sensu/uchiwa/pull/528)
+The filters package now implements an interface for easier use - [PR #528](https://github.com/sensu/uchiwa/pull/528)
+Refactoring of the authorization logic - [PR #528](https://github.com/sensu/uchiwa/pull/528)
+
+### 0.17.0 (2016-07-20)
+#### Features
+- Add API token-based authentication - [PR #525](https://github.com/sensu/uchiwa/pull/525)
+
+#### Bug Fixes
+- Prevent old alerts to be displayed inadvertently - [Issue #512](https://github.com/sensu/uchiwa/issues/512)
+- Fix iframes support - [Issue #508](https://github.com/sensu/uchiwa/issues/508)
+
+#### Other
+Use Alpine Linux as the base image for Docker images - [PR #498](https://github.com/sensu/uchiwa/pull/498)
+
+### 0.16.0 (2016-06-23)
+#### Bug Fixes
+- The stashes could not be deleted from the stashes view - [Issue #503](https://github.com/sensu/uchiwa/issues/507)
+- Incorrect client attributes could be displayed on a client view - [Issue #471](https://github.com/sensu/uchiwa/issues/471)
+- The 'Show All' option should not use the current elements number - [Issue #466](https://github.com/sensu/uchiwa/issues/466)
+- The relative timestamp was not properly calculated on a stash view - [Issue #456](https://github.com/sensu/uchiwa/issues/456)
+
+#### Other
+- Refactoring of the Uchiwa API endpoints - [PR #513](https://github.com/sensu/uchiwa/pull/513)
+
+### 0.15.0 (2016-06-02)
+#### Features
+- Add support for upcoming Sensu 0.24.0 - [PR #500](https://github.com/sensu/uchiwa/pull/500)
+
+### 0.14.5 (2016-05-10)
+#### Bug Fixes
+- Fix i386 packages - [PR #31](https://github.com/sensu/uchiwa-build/pull/31)
+
+### 0.14.4 (2016-05-10)
+#### Bug Fixes
+- Add missing syntax highlighting on the client view - [1089a7d](https://github.com/sensu/uchiwa-web/commit/1089a7d75ca8810c31fc44492acb07dc402faa5a)
+- Fix the checks filter on the events view - [PR #94](https://github.com/sensu/uchiwa-web/pull/94)
+- Prevent infinite pagination loop on the Sensu API - [PR #478](https://github.com/sensu/uchiwa/pull/478)
+
 ### 0.14.3 (2016-03-03)
 #### Features
 - Add a detailed stash view - [PR #90](https://github.com/sensu/uchiwa-web/pull/90)
